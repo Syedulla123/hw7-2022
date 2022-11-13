@@ -13,6 +13,7 @@ function playVid() {
 function playVid() {
 	console.log("Play Video");
 	video.play();
+	document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
 }
 
 document.querySelector("#pause").addEventListener("click", pauseVid)
